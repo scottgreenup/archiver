@@ -140,7 +140,7 @@ func NewArchiver(target ConfigTarget) (*Archiver, error) {
 }
 
 func main() {
-	configFile := flag.String("config", "config.json", "Path to config file")
+	configFile := flag.String("config", "Archiverfile", "Path to config file")
 	flag.Parse()
 
 	config, err := NewConfig(*configFile)
