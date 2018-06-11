@@ -13,9 +13,6 @@ func TestRead(t *testing.T) {
 		Permission
 		Class
 	} {
-		{"./testdata/permissions/root_root_r--------", ReadPermission, OwnerClass},
-		{"./testdata/permissions/root_root_---r-----", ReadPermission, GroupClass},
-		{"./testdata/permissions/root_root_------r--", ReadPermission, OtherClass},
 		{"./testdata/permissions/user_user_r--------", ReadPermission, OwnerClass},
 		{"./testdata/permissions/user_user_---r-----", ReadPermission, GroupClass},
 		{"./testdata/permissions/user_user_------r--", ReadPermission, OtherClass},
